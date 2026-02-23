@@ -1,0 +1,57 @@
+# VCOD Datasets
+moca_mask_tr:
+  {
+    root: "/home/siu6ngai6/miniconda3/envs/COD/ZoomNeXt/Dataset/MoCA_Video/TrainDataset_per_sq",
+    image: { path: "*/Imgs", suffix: ".jpg" },
+    mask: { path: "*/GT", suffix: ".png" },
+    start_idx: 0,
+    end_idx: 0
+  }
+moca_mask_te:
+  {
+    root: "/home/siu6ngai6/miniconda3/envs/COD/ZoomNeXt/Dataset/MoCA_Video/TestDataset_per_sq",
+    image: { path: "*/Imgs", suffix: ".jpg" },
+    mask: { path: "*/GT", suffix: ".png" },
+    start_idx: 0,
+    end_idx: -2
+  }
+cad:
+  {
+    root: "/home/siu6ngai6/miniconda3/envs/COD/ZoomNeXt/Dataset/CamouflagedAnimalDataset",
+    image: { path: "original_data/*/frames", suffix: ".png" },
+    mask: { path: "converted_mask/*/groundtruth", suffix: ".png" },
+    start_idx: 0,
+    end_idx: 0
+  }
+
+# ICOD Datasets
+train:
+  {
+    root: "/home/siu6ngai6/miniconda3/envs/COD/ZoomNeXt/Dataset/Train",
+    image: { path: "Imgs", suffix: ".jpg" },
+    mask: { path: "GT", suffix: ".png" },
+  }
+cod10k_te:
+  {
+    root: "/home/siu6ngai6/miniconda3/envs/COD/ZoomNeXt/Dataset/Test/COD10K",
+    image: { path: "Imgs", suffix: ".jpg" },
+    mask: { path: "GT", suffix: ".png" },
+  }
+camo_te:
+  {
+    root: "/home/siu6ngai6/miniconda3/envs/COD/ZoomNeXt/Dataset/Test/CAMO",
+    image: { path: "Imgs", suffix: ".jpg" },
+    mask: { path: "GT", suffix: ".png" },
+  }
+chameleon:
+  {
+    root: "/home/siu6ngai6/miniconda3/envs/COD/ZoomNeXt/Dataset/Test/CHAMELEON",
+    image: { path: "Imgs", suffix: ".jpg" },
+    mask: { path: "GT", suffix: ".png" },
+  }
+nc4k:
+  {
+    root: "/home/siu6ngai6/miniconda3/envs/COD/ZoomNeXt/Dataset/Test/NC4K",
+    image: { path: "Imgs", suffix: ".jpg" },
+    mask: { path: "GT", suffix: ".png" },
+  }
